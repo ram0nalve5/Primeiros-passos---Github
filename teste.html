@@ -7,5 +7,23 @@
 </head>
 <body>
     <h1>Trabalhando/Aprendendo GIT</h1>
+    <button onclick="change_background_color()">DarkMode</button>
+    <style>
+        body{
+            transition: 1s;
+        }
+    </style>
+    <script>
+        function change_background_color(){
+            if (document.body.style.backgroundColor == "rgb(255, 255, 255)"){
+                document.body.style.backgroundColor = "rgb(0, 0, 0)"
+                document.body.style.color = "rgb(255, 255, 255)"
+            }     
+            else{
+                document.body.style.backgroundColor = "rgb(255, 255, 255)"
+                document.body.style.color = "rgb(0, 0, 0)"
+            }
+        }
+    </script>
 </body>
 </html>
